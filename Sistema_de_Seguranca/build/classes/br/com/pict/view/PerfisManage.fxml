@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="perfisManage" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="585.0" prefWidth="982.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.pict.controler.PerfisManageController">
+   <children>
+      <AnchorPane layoutX="3.0" layoutY="157.0" prefHeight="421.0" prefWidth="976.0">
+         <children>
+            <TableView fx:id="tableView" layoutX="10.0" layoutY="14.0" prefHeight="395.0" prefWidth="956.0">
+              <columns>
+                <TableColumn fx:id="columnCheck" prefWidth="41.0">
+                     <graphic>
+                        <CheckBox fx:id="checkBoxAll" mnemonicParsing="false" onAction="#onAction$checkBoxAll" />
+                     </graphic>
+                  </TableColumn>
+                <TableColumn fx:id="columnId" prefWidth="70.0" text="ID" />
+                  <TableColumn fx:id="columnNome" prefWidth="338.0" text="Nome Completo" />
+                  <TableColumn fx:id="columnDataN" prefWidth="188.0" text="Data de Nacimento" />
+                  <TableColumn fx:id="columnCPF" minWidth="4.0" prefWidth="160.0" text="CPF" />
+                  <TableColumn fx:id="columnRG" prefWidth="160.0" text="RG" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+      <VBox prefHeight="156.0" prefWidth="982.0" spacing="15.0" style="-fx-background-color: #2f3542;">
+         <children>
+            <HBox alignment="CENTER">
+               <children>
+                  <Label text="Lista de Perfils" textFill="WHITE">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="156.0" prefWidth="982.0" spacing="20.0">
+               <children>
+                  <JFXButton fx:id="btnAtualizar" onAction="#onClick$btnAtualizar" prefHeight="30.0" prefWidth="115.0" ripplerFill="WHITE" style="-fx-background-color: #454a56;" text="Atualizar Lista" textFill="WHITE" />
+                  <JFXButton fx:id="btnCadastrar" onAction="#onClick$btnCadastrar" prefHeight="30.0" prefWidth="115.0" style="-fx-background-color: #454a56;" text="Cadastrar" textFill="WHITE" />
+                  <JFXButton fx:id="btnRemover" onAction="#onClick$btnRemover" prefHeight="30.0" prefWidth="115.0" style="-fx-background-color: #454a56;" text="Remover" textFill="WHITE" />
+               </children>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </HBox>
+            <HBox spacing="15.0">
+               <children>
+                  <JFXTextField fx:id="txtFProcurarNome" focusColor="WHITE" focusTraversable="false" labelFloat="true" prefHeight="30.0" prefWidth="255.0" promptText="Procurar por nome" style="-fx-prompt-text-fill: #ffffff; -fx-text-inner-color: #ffffff;" unFocusColor="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="txtFProcurarCPF" focusColor="WHITE" focusTraversable="false" labelFloat="true" prefHeight="30.0" prefWidth="168.0" promptText="Procurar por CPF" style="-fx-prompt-text-fill: #ffffff; -fx-text-inner-color: #ffffff;" unFocusColor="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="txtFProcurarRG" focusColor="WHITE" focusTraversable="false" labelFloat="true" prefHeight="30.0" prefWidth="150.0" promptText="Procurar por RG" style="-fx-prompt-text-fill: #ffffff; -fx-text-inner-color: #ffffff;" unFocusColor="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="txtFProcurarDtN" focusColor="WHITE" focusTraversable="false" labelFloat="true" prefHeight="30.0" prefWidth="159.0" promptText="Procurar por Data de N." style="-fx-prompt-text-fill: #ffffff; -fx-text-inner-color: #ffffff;" unFocusColor="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXButton fx:id="btnProcurar" onAction="#onOk$Filter" prefHeight="30.0" prefWidth="115.0" style="-fx-background-color: #454a56;" text="Procurar" textFill="WHITE" />
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets left="15.0" />
+               </padding>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>

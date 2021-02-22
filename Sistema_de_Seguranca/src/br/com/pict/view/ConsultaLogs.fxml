@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="consultaLogs" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="650.0" prefWidth="1100.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.pict.controler.ConsultaLogsController">
+    <stylesheets>
+        <URL value="@/br/com/pict/css/consultalogs.css" />
+    </stylesheets>
+   <children>
+      <VBox prefHeight="156.0" prefWidth="1100.0" spacing="15.0" style="-fx-background-color: #2f3542;">
+         <children>
+            <HBox alignment="CENTER">
+               <children>
+                  <Label text="Relatórios de Logs" textFill="WHITE">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="156.0" spacing="20.0">
+               <children>
+                  <JFXButton fx:id="btnAtualizar" onAction="#onClick$btnAtualizar" prefHeight="30.0" prefWidth="115.0" ripplerFill="WHITE" style="-fx-background-color: #454a56;" text="Atualizar" textFill="WHITE" />
+                  <JFXButton fx:id="btnSair" onAction="#onClick$btnSair" prefHeight="30.0" prefWidth="115.0" style="-fx-background-color: #454a56;" text="Sair" textFill="WHITE" />
+               </children>
+            </HBox>
+            <HBox alignment="TOP_CENTER" spacing="15.0">
+               <children>
+                  <JFXTextField fx:id="txtFProcurarNome" focusColor="WHITE" focusTraversable="false" labelFloat="true" prefHeight="30.0" prefWidth="255.0" promptText="Procurar por Nome" style="-fx-prompt-text-fill: #ffffff; -fx-text-inner-color: #ffffff;" unFocusColor="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="txtFProcurarCPF" focusColor="WHITE" focusTraversable="false" labelFloat="true" prefHeight="30.0" prefWidth="168.0" promptText="Procurar por CPF" style="-fx-prompt-text-fill: #ffffff; -fx-text-inner-color: #ffffff;" unFocusColor="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="txtFProcurarRG" focusColor="WHITE" focusTraversable="false" labelFloat="true" prefHeight="30.0" prefWidth="150.0" promptText="Procurar por RG" style="-fx-prompt-text-fill: #ffffff; -fx-text-inner-color: #ffffff;" unFocusColor="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXButton fx:id="btnProcurar" onAction="#onOk$Filter" prefHeight="30.0" prefWidth="115.0" style="-fx-background-color: #454a56;" text="Procurar" textFill="WHITE" />
+               </children>
+               <padding>
+                  <Insets left="15.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </VBox>
+      <AnchorPane layoutY="165.0" prefHeight="480.0" prefWidth="1100.0">
+         <children>
+            <TableView fx:id="tableView" layoutX="10.0" layoutY="14.0" prefHeight="457.0" prefWidth="1077.0">
+               <columns>
+                  <TableColumn fx:id="columnId" prefWidth="50.99999237060547" text="ID" />
+                  <TableColumn fx:id="columnDataEntrada" prefWidth="136.0" text="Data de Entrada" />
+                  <TableColumn fx:id="columnDataSaida" prefWidth="149.0" text="Data de Saída" />
+                  <TableColumn fx:id="columnNome" maxWidth="463.0" minWidth="200.0" prefWidth="418.0" text="Nome Completo" />
+                  <TableColumn fx:id="columnCPF" prefWidth="160.0" text="CPF" />
+                  <TableColumn fx:id="columnRG" minWidth="0.0" prefWidth="160.0" text="RG" />
+               </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

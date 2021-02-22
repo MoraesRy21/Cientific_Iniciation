@@ -1,0 +1,20 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.AnchorPane {
+    -fx-background-color: #2f3542;
+}
+
+.VBox {
+    -fx-background-color: #d5d7d9;
+}
+
+.Label {
+    -fx-font-family: "MS Reference Sans Serif";
+}
+
+/*  Mix de cores: https://www.w3schools.com/colors/colors_mixer.asp?colorbottom=DC143C&colortop=FFFFFF 
+    Cores base: https://flatuicolors.com/
+    Icones: https://icons8.com/#
+*/

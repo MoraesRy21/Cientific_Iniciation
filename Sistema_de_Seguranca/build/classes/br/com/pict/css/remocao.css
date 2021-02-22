@@ -1,0 +1,14 @@
+
+.search {
+        -fx-background-radius: 20;
+	-fx-text-fill:#000000;
+	-fx-prompt-text-fill:#D4CEE3;
+        -fx-border-radius:15px;
+}
+.buttonProximoVoltar:hover {
+    /*-fx-background-color: #bdc3c7;*/
+    -fx-scale-x: 1.5;
+    -fx-scale-y: 1.5;
+    -fx-scale-z: 1.5;
+    -fx-border-radius:20px;
+}

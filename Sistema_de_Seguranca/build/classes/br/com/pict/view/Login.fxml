@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootAnchorPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="864.0" styleClass="AnchorPane" stylesheets="@../css/login.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.pict.authenticate.LoginController">
+    <children>
+      <VBox alignment="CENTER" layoutX="586.0" minHeight="-Infinity" prefHeight="400.0" prefWidth="280.0" spacing="30.0" styleClass="VBox" stylesheets="@../css/login.css">
+         <children>
+            <Label text="Sign In">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </Label>
+            <JFXTextField fx:id="textFildUser" centerShape="false" focusColor="#e9e9e9" promptText="Usuário" unFocusColor="#bdbebd" />
+            <JFXPasswordField fx:id="textFieldPass" focusColor="#e9e9e9" onAction="#onOK$textFieldPass" promptText="Senha" unFocusColor="#bdbebd" />
+            <JFXButton fx:id="buttonLogin" onMouseClicked="#onMouseClicked$buttonLogin" prefHeight="26.0" prefWidth="148.0" style="-fx-background-color: #e9e9e9;" text="Login" />
+         </children>
+         <padding>
+            <Insets left="30.0" right="30.0" />
+         </padding>
+      </VBox>
+      <VBox alignment="CENTER" prefHeight="400.0" prefWidth="587.0" spacing="10.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="68.0" prefWidth="441.0" spacing="10.0">
+               <children>
+                  <ImageView fitHeight="42.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/search-icon_34373.png" />
+                     </image>
+                  </ImageView>
+                  <Label prefHeight="38.0" prefWidth="384.0" text="Iniciação Científica e Tecnológica" textFill="WHITE">
+                     <font>
+                        <Font size="26.0" />
+                     </font>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="30.0" left="10.0" top="30.0" />
+               </VBox.margin>
+            </HBox>
+            <Label prefHeight="30.0" prefWidth="451.0" text="Sistema de Segurança com Reconhecimento Facial" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets left="10.0" top="10.0" />
+               </VBox.margin>
+            </Label>
+            <Label alignment="CENTER" prefHeight="30.0" prefWidth="451.0" text="Cadastro e Monitoramento" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets left="10.0" />
+               </VBox.margin>
+            </Label>
+            <VBox alignment="CENTER" prefHeight="84.0" prefWidth="587.0" spacing="10.0">
+               <children>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Autores">
+                     <VBox.margin>
+                        <Insets left="10.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Iarley Porto Cruz Moraes">
+                     <VBox.margin>
+                        <Insets left="10.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Emanuel Oliveira Salvador Souza">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </VBox>
+         </children>
+      </VBox>
+   </children>
+   <padding>
+      <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+   </padding>
+</AnchorPane>

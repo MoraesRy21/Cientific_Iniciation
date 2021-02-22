@@ -1,0 +1,26 @@
+/*
+ * Stylesheet menu.css
+*/
+
+.cadastroButton{
+    -fx-background-color: #2f3542;
+}
+.cadastroButton:hover {
+    -fx-background-color: #6b7884;
+}
+.cadastroButton:pressed {
+    -fx-background-color: #8b959f;
+}
+
+.menuButtonLogout{
+    -fx-background-color: #EAEBED;
+    -fx-align-content: center;
+}
+.menuButtonLogout:hover{
+    -fx-background-color: #D6D8DB;
+}
+
+.linearGradToLeft {
+    -fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #566573, #dfe2e5);
+}
+

@@ -1,0 +1,19 @@
+group 'org.vp.Face'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile "org.nd4j:nd4j-native-platform:0.9.1"
+    compile "org.deeplearning4j:deeplearning4j-core:0.9.1"
+    compile "org.deeplearning4j:deeplearning4j-zoo:0.9.1"
+    compile "org.openpnp:opencv:3.2.0-1"
+    compile group: 'mysql', name: 'mysql-connector-java', version: '5.1.45'
+}
