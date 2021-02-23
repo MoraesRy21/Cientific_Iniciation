@@ -2,10 +2,13 @@
 
 # Sistema de Segurança com Reconhecimento Facial
 Um projeto iniciado na Faculdade de Ciências e Tecnologia ÁREA1 para o Programa de Iniciação Científica e Tecnológica (PICT).
-***
+
+## Objetivo 
+Desenvolver um software que forneça segurança a um determinado local, com baixo custo de implementação com alta eficiência.   
+
 ## Artigo
 Para mais informações sobre a arquitetura e conceitos usados no projeto, vale a leitura do artigo publicado em: 
-***
+
 ## Estrutura de Projeto
 O projeto está dividido em três aplicações e um banco de dados:
 - **Sistema_de_Seguranca**, desenvolvido no NetBeans IDE 8.2
