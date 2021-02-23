@@ -4,7 +4,7 @@
 Um projeto iniciado na Faculdade de Ciências e Tecnologia ÁREA1 para o Programa de Iniciação Científica e Tecnológica (PICT).
 
 ## Objetivo 
-Desenvolver um software que forneça segurança a um determinado local, com baixo custo de implementação com alta eficiência.   
+Desenvolver um software que através do uso da *Deep Learning* forneça segurança a um determinado local, com baixo custo de implementação com alta eficiência.   
 
 ## Artigo
 Para mais informações sobre a arquitetura e conceitos usados no projeto, vale a leitura do artigo publicado em: 
@@ -31,7 +31,7 @@ O projeto está dividido em três aplicações e um banco de dados:
   - **ProjectServer_IA:**
     - Java versão 8
     - [Download da rede neural](https://dl4jdata.blob.core.windows.net/models/vgg16_dl4j_vggface_inference.v1.zip)
-    - Copiar o arquivo baixado (vgg16_dl4j_vggface_inference.v1.zip) para a pasta "C:/Users/$user/.deeplearning4j"
+    - Copiar o arquivo baixado (vgg16_dl4j_vggface_inference.v1.zip) para a pasta `C:/Users/$user/.deeplearning4j`
 
 ## Execução 
 - **Sistema_de_Seguranca:**
