@@ -50,5 +50,5 @@ O projeto está dividido em três aplicações e um banco de dados:
 ***
 ### Observações
 Para ser feito comunicação entre as aplicações se faz necessário a alteração no arquivo **aplication.properties** de cada aplicação. Neste arquivo é feito as configurações IPs.  
-Caso queira que a comunicação seja criptografada entre as aplicações será necessário a utilização de uma VPN, como sugestão o **OpenVPN** pois além de ser *Opensource*, foi usado e testado. Porém será necessário alterar o arquivo **aplication.properties**, para colocar o IP privado da VPN. 
+Caso queira que a comunicação seja criptografada entre as aplicações será necessário a utilização de uma VPN, segue como sugestão o **OpenVPN**, pois além de ser *Opensource*, o mesmo foi testado e usado. Porém, como salientado anteriormente, será necessário alterar o arquivo **aplication.properties**, para colocar o IP privado da VPN. 
 
